@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CarValue</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="libs/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="libs/carquery.0.3.4.js"></script>
+    <script type="text/javascript" src="car.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+  </head>
+  <body>
+    <div id="carSettings">
+      <div>Zip Code: <input id="zip" type="number" max="99999" min="0"></div>
+      <div>Mileage: <input id="mileage" type="number"></div>
+      <div>Year: <select name="car-year" id="car-year"></select></div>
+      <div>Make: <select name="car-make" id="car-make"></select></div>
+      <div>Model: <select name="car-model" id="car-model"></select></div>
+      <div>Trim: <select name="car-trim" id="car-trim"></select></div>
+
+      <input id="cq-show-data" type="button" value="Show Data" />
+      <div id="car-model-data"></div>
+    </div>
+    <div id="status"></div>
+    <img id="image-result" hidden>
+  </body>
+</html>

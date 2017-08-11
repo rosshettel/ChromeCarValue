@@ -1,0 +1,20 @@
+{
+  "author": "Ross Hettel <ross@het.tel>",
+  "background": {
+    "scripts": [ "background.js" ]
+  },
+  "content_security_policy": "script-src 'self' https://www.carqueryapi.com; object-src 'self'",
+  "description": "Automatically lookup used/new car market values via Edmunds",
+  "manifest_version": 2,
+  "name": "Car Value",
+  "page_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "https://*.autotrader.com/*",
+    "https://*.craigslist.org/*"
+  ],
+  "version": "1.0"
+}
