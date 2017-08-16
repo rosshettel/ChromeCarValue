@@ -1,10 +1,12 @@
 (function () {
   var message = {
-    extension: 'CarValue',
+    extension: 'ChromeCarValue',
     'injected jquery version': jQuery.fn.jquery
   };
 
   var metadata = $('[data-birf-role="dataisland"]').data('birfExtra').page;
+  message.title = $('[data-qaid="cntnr-vehicle-title"]').text().toLowerCase();
+  message.title += " " + $('[data-qaid="cntnr-vehicle-trim"]').text().toLowerCase();
   message.zip = metadata.location.address;
   message.year = metadata.vehicle.car_year;
   message.mileage = metadata.vehicle.odometer;

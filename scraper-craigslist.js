@@ -1,6 +1,6 @@
 (function () {
   var message = {
-    extension: 'CarValue',
+    extension: 'ChromeCarValue',
     'injected jquery version': jQuery.fn.jquery
   };
 
